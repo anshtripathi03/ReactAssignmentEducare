@@ -5,7 +5,7 @@ export default function Welcome() {
   const nav = useNavigate();
 
   return (
-    <div className="p-6 flex flex-col justify-end h-full">
+    <div className="p-6 flex flex-col justify-end min-h-screen">
       <div>
         <h1 className="text-[22px] font-semibold text-textDark leading-[28px] mb-2">
           Welcome to PopX

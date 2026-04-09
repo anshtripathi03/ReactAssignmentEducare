@@ -66,7 +66,7 @@ export default function Login() {
     return (
         <div className="p-6 h-full flex flex-col">
             <h1 className="text-[22px] font-semibold text-textDark leading-[28px] mb-2">
-                Signin to your PopX account
+                Signin to your <br /> PopX account
             </h1>
 
             <p className="text-[14px] text-textLight leading-[20px] mb-6">

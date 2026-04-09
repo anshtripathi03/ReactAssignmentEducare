@@ -6,6 +6,7 @@ import Register from "./Pages/Register";
 import Account from "./Pages/Account";
 import ProtectedRoute from "./Components/ProtectedRoutes";
 import PageWrapper from "./Components/PageWrapper";
+import AccountWrapper from "./Components/AccountWrapper";
 
 function AnimatedRoutes() {
   const location = useLocation(); 
@@ -20,7 +21,7 @@ function AnimatedRoutes() {
           path="/account"
           element={
             <ProtectedRoute>
-              <PageWrapper><Account /></PageWrapper>
+              <AccountWrapper><Account /></AccountWrapper>
             </ProtectedRoute>
           }
         />
