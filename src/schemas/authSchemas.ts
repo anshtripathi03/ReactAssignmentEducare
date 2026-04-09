@@ -1,0 +1,17 @@
+import { z } from "zod";
+
+export const loginSchema = z.object({
+  email: z.string().email("Invalid email"),
+  password: z.string().min(6, "Minimum 6 characters"),
+});
+
+export const registerSchema = z.object({
+  name: z.string().min(2, "Name required"),
+  phone: z.string().min(10, "Invalid phone"),
+  email: z.string().email(),
+  password: z.string().min(6),
+  company: z.string().optional(),
+  agency: z.enum(["yes", "no"]).refine((val) => val !== undefined, {
+    message: "Please select an option",
+  }),
+});
